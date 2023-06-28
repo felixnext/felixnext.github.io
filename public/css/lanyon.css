@@ -304,8 +304,25 @@ a.sidebar-nav-item:focus {
 
 .page,
 .post {
-  margin-bottom: 4em;
+  margin-bottom: 3em;
+  border-radius: .25rem;
+  padding: 0.5rem;
 }
+.posts >
+.post:nth-child(even) {
+    background-color: #fff;
+  }
+.posts >
+.post:nth-child(odd) {
+    background-color: #ededed;
+  }
+
+  /* highlight on hover */
+.posts >
+.post:hover {
+    background-color: #a6e6a3;
+    cursor: pointer;
+  }
 
 /* Blog post or page title */
 .page-title,
