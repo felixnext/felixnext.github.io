@@ -1,8 +1,9 @@
 ---
-layout: posts
+layout: post
 title:  "Hello World!"
 date:   2023-06-27 18:18:24 +0200
 tags: update
+comments: true
 ---
 A few weeks back I decided I wanted to go deeper into understanding of technology.
 It is
