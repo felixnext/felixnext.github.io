@@ -57,9 +57,17 @@ requires to set a bunch of path variables (might be different on other systems):
 ```bash
 brew install ruby@3
 
-# Add to ~/.zshrc
-# TODO: add this
+# Add ruby to the path (replaces system default version)
+echo 'export PATH="/opt/homebrew/opt/ruby/bin:$PATH"' >> ~/.zshrc
+
+# to make sure jekyll is on the path add gems folder
+# you can validate this path using `gem environment` (the EXECUTABLE DIRECTORY)
+echo 'export PATH="/opt/homebrew/lib/ruby/gems/3.2.0/bin:$PATH"' >> ~/.zshrc
 ```
+
+> Note that this relates to installation on MacOS (related to homebrew and zsh).
+> There are also ways to achieve something similar with `rbenv` or `chruby`,
+> but using `brew` seemed like the easiest option to me.
 
 After that, I could install jekyll and run the local server:
 
@@ -70,7 +78,35 @@ jekyll new .
 bundle exec jekyll serve
 ```
 
-This will bring you
+If you know open up you browser (`localhost:4000`) you should see something like
+this:
+
+![jekyll default page](/assets/imgs/hello-world/jekyll.png)
+
+Before moving on it is worth taking some time to understand the folder structure.
+It should look like this:
+
+![jekyll folder structure](/assets/imgs/hello-world/jekyll-folder.png)
+
+TODO
+
+The final thing to do is to connect the github pages to my domain.
+TODO
+
+
+## Iterations
+
+### 1. Adding a Theme
+
+TODO
+
+### 2. Add Disqus Comments
+
+TODO
+
+### 3. Creating Posts
+
+TODO
 
 
 ## Future Work
