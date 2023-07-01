@@ -1,0 +1,45 @@
+# Setup
+title: Felix's Blog
+tagline: Thoughts on tech & society
+description: >- # this means to ignore newlines until "baseurl:"
+  Personal ramblings about tech, life and everything in between.
+  Most of the posts are mainly for my own reference and to organize my own thoughts.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://blog.felixnext.xyz" # the base hostname & protocol for your site, e.g. http://example.com
+github_username:  felixnext
+github_repo: felixnext.github.io
+paginate: 1
+permalink: pretty
+
+# Gems
+plugins:
+  - jekyll-gist
+  - jekyll-paginate
+  - jekyll-seo-tag
+
+# Optimize Jekyll
+exclude:
+  - .editorconfig
+  - .git
+  - .jekyll-cache
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE.md
+  - README.md
+
+sass:
+  sass_dir: _sass
+  style: :compressed
+
+# Options
+
+# Replace this value and uncomment to enable Google Analytics tracking
+# ga_analytics: UA-000000-0
+
+# Specify the author for blog posts
+author:
+  name: Felix Geilert
+  url: https://blog.felixnext.xyz
+
+# Custom vars
+version: 1.0.0
